@@ -153,10 +153,7 @@ STATICFILES_DIRS = [
     STATICFILES_BASE_DIR
 ]
 
-# output for python manage.py collectstatic
-# local cdn -> production cdn
-STATIC_ROOT = BASE_DIR / "local-cdn"
-
+#  for python manage.py collectstatic
 
 
 # Default primary key field type

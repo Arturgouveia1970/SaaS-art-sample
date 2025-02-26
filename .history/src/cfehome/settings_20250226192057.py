@@ -153,11 +153,6 @@ STATICFILES_DIRS = [
     STATICFILES_BASE_DIR
 ]
 
-# output for python manage.py collectstatic
-# local cdn -> production cdn
-STATIC_ROOT = BASE_DIR / "local-cdn"
-
-
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field

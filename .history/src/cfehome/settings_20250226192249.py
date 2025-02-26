@@ -154,8 +154,7 @@ STATICFILES_DIRS = [
 ]
 
 # output for python manage.py collectstatic
-# local cdn -> production cdn
-STATIC_ROOT = BASE_DIR / "local-cdn"
+# local cdn -> production
 
 
 
