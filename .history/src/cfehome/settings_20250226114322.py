@@ -10,7 +10,7 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/5.1/ref/settings/
 """
 from decouple import config
-import os
+#import os
 from pathlib import Path
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
@@ -25,7 +25,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = config("DJANGO_SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = str(os.environ.get("DJANGO_DEBUG")).lower() ==  "true"
+# DEBUG = str(os.environ.get("DJANGO_DEBUG")).lower() ==  "true"
 DEBUG = config("DJANGO_DEBUG", cast=bool)
 
 print("DEBUG", DEBUG, type(DEBUG))
