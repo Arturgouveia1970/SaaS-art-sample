@@ -29,6 +29,7 @@ SECRET_KEY = config("DJANGO_SECRET_KEY")
 DEBUG = config("DJANGO_DEBUG", cast=bool)
 
 
+
 ALLOWED_HOSTS = [
     ".railway.app" # https://saas.prod.railway.app
 ]
@@ -96,7 +97,7 @@ DATABASES = {
 }
 
 CONN_MAX_AGE = config("CONN_MAX_AGE", cast=int, default=300)
-DATABASE_URL = config("DATABASE_URL", default=None)
+DATABASE_URL = config("DATABASE_URL", cast=str)
 
 if DATABASE_URL is not None:
     import dj_database_url
